@@ -116,10 +116,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EMKalmanAlgorithm\EMKalmanAlgorithm.vcxproj">
-      <Project>{58bb93f1-aac6-4b6a-86a0-7cb02a39aa6f}</Project>
-      <Name>EMKalmanAlgorithm</Name>
-    </ProjectReference>
     <ProjectReference Include="..\NRMatrixNet\NRMatrixNet.vcxproj">
       <Project>{83402fe5-a8f3-42a9-a0a4-886bda2001d2}</Project>
       <Name>NRMatrixNet</Name>

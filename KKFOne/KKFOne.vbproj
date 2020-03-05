@@ -249,10 +249,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EMKalmanAlgorithm\EMKalmanAlgorithm.vcxproj">
-      <Project>{58bb93f1-aac6-4b6a-86a0-7cb02a39aa6f}</Project>
-      <Name>EMKalmanAlgorithm</Name>
-    </ProjectReference>
     <ProjectReference Include="..\KKFClassLib\KKFClassLib.vbproj">
       <Project>{dca4c66c-c69d-405b-8c83-693694b62bd6}</Project>
       <Name>KKFClassLib</Name>
