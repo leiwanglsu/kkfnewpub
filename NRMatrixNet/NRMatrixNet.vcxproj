@@ -27,7 +27,7 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccProvider>SAK</SccProvider>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <TargetFrameworkVersion>4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -196,14 +196,12 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\Accord.3.5.4-alpha\build\Accord.targets" Condition="Exists('..\packages\Accord.3.5.4-alpha\build\Accord.targets')" />
     <Import Project="..\EMKalmanAlgorithm\packages\Accord.3.8.0\build\Accord.targets" Condition="Exists('..\EMKalmanAlgorithm\packages\Accord.3.8.0\build\Accord.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Accord.3.5.4-alpha\build\Accord.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Accord.3.5.4-alpha\build\Accord.targets'))" />
     <Error Condition="!Exists('..\EMKalmanAlgorithm\packages\Accord.3.8.0\build\Accord.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\EMKalmanAlgorithm\packages\Accord.3.8.0\build\Accord.targets'))" />
   </Target>
 </Project>

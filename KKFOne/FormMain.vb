@@ -262,7 +262,8 @@ Public Class FormMain
             TextBoxOutput.Text += vbCrLf
             TextBoxOutput.Text += String.Format("R = {0}", pSingleKKF.RT(pSingleKKF.RT.Count - 1))
             TextBoxOutput.Text += vbCrLf
-
+            TextBoxOutput.Text += String.Format("Q = {0}", pSingleKKF.GetQ())
+            TextBoxOutput.Text += vbCrLf
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
