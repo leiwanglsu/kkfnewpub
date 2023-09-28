@@ -16,6 +16,7 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -136,39 +137,27 @@
     <Compile Include="FormCovariogram.Designer.vb">
       <DependentUpon>FormCovariogram.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormCovariogram.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FormCovariogram.vb" />
     <Compile Include="FormKKFParameter.Designer.vb">
       <DependentUpon>FormKKFParameter.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormKKFParameter.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FormKKFParameter.vb" />
     <Compile Include="FormMain.Designer.vb">
       <DependentUpon>FormMain.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormMain.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FormMain.vb" />
     <Compile Include="FormNormativeSites.Designer.vb">
       <DependentUpon>FormNormativeSites.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormNormativeSites.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FormNormativeSites.vb" />
     <Compile Include="FormSTInterpolation.Designer.vb">
       <DependentUpon>FormSTInterpolation.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormSTInterpolation.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FormSTInterpolation.vb" />
     <Compile Include="FormSTRaster.Designer.vb">
       <DependentUpon>FormSTRaster.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormSTRaster.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FormSTRaster.vb" />
     <Compile Include="LicenseInitializer.Designer.vb">
       <DependentUpon>LicenseInitializer.vb</DependentUpon>
     </Compile>
@@ -177,6 +166,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -191,15 +181,11 @@
     <Compile Include="ReadFixedStationData.Designer.vb">
       <DependentUpon>ReadFixedStationData.vb</DependentUpon>
     </Compile>
-    <Compile Include="ReadFixedStationData.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ReadFixedStationData.vb" />
     <Compile Include="ReadMovableStationData.Designer.vb">
       <DependentUpon>ReadMovableStationData.vb</DependentUpon>
     </Compile>
-    <Compile Include="ReadMovableStationData.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ReadMovableStationData.vb" />
     <Compile Include="textboxmatrix.vb" />
     <Compile Include="utilities.vb" />
   </ItemGroup>
@@ -249,6 +235,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EMKalmanAlgorithm\EMKalmanAlgorithm.vcxproj">
+      <Project>{58bb93f1-aac6-4b6a-86a0-7cb02a39aa6f}</Project>
+      <Name>EMKalmanAlgorithm</Name>
+    </ProjectReference>
     <ProjectReference Include="..\KKFClassLib\KKFClassLib.vbproj">
       <Project>{dca4c66c-c69d-405b-8c83-693694b62bd6}</Project>
       <Name>KKFClassLib</Name>
